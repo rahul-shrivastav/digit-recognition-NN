@@ -6,8 +6,8 @@ function App() {
 
   return (
     <div className="w-screen h-screen flex overflow-clip">
-      <div className="border w-1/2 h-full flex flex-col items-center justify-evenly">
-        <h1 class="text-4xl font-semibold bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent ">
+      <div className="border w-1/2 h-full flex flex-col items-center justify-center gap-10">
+        <h1 class="text-3xl font-semibold bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent ">
           DRAW A DIGIT
         </h1>
         <Gridpaint />
