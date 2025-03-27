@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { IoReloadCircle } from "react-icons/io5";
 
 const Gridpaint = () => {
   const gridSize = 25;
@@ -33,11 +34,18 @@ const Gridpaint = () => {
 
   return (
     <div
-      onContextMenu={(e) => e.preventDefault()} // Prevent context menu
+      onContextMenu={(e) => e.preventDefault()} 
       onMouseUp={handleMouseUp}
-      className="grid w-[480px] h-[480px]  shadow-2xl border border-gray-100"
+      className="relative grid w-[480px] h-[480px]  shadow-2xl "
       style={{ gridTemplateColumns: `repeat(${gridSize}, 1fr)`, gridTemplateRows: `repeat(${gridSize}, 1fr)` }}
     >
+      <button
+        onClick={() => setCells(Array(gridSize * gridSize).fill(0))}
+        className="absolute bottom-0 -right-10 hover:scale-105 hover:cursor-pointer transition-transform w-7 h-7 flex items-center justify-center text-4xl text-gray-800"
+      >
+        <IoReloadCircle />
+      </button>
+
       {cells.map((value, index) => (
         <div
           key={index}

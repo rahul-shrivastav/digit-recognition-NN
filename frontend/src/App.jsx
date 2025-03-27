@@ -7,9 +7,11 @@ function App() {
   return (
     <div className="w-screen h-screen flex overflow-clip">
       <div className="border w-1/2 h-full flex flex-col items-center justify-evenly">
-        <h1 className="text-2xl font-extralight">Draw your digit</h1>
+        <h1 class="text-4xl font-semibold bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent ">
+          DRAW A DIGIT
+        </h1>
         <Gridpaint />
-        <button className='p-5 shadow-2xl w-2/5 rounded-2xl bg-slate-100'>Predict</button>
+        <button className='bg-gradient-to-r hover:cursor-pointer hover:scale-105 transition-transform duration-500 from-emerald-400 to-cyan-400 p-5 shadow-2xl w-2/5 h-14 rounded-md text-white font-medium text-xl bg-slate-100 flex items-center justify-center'>Predict</button>
       </div>
       <div className="border w-1/2 h-full"></div>
 
