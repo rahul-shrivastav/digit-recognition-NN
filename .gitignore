@@ -1,0 +1,6 @@
+model/venv/.nonadmin
+model/venv/conda-meta/history
+model/venv/etc/aau_token
+
+# Ignore all files in the venv directory
+venv

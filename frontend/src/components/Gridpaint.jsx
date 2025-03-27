@@ -1,11 +1,8 @@
 import { useState } from "react";
 import { IoReloadCircle } from "react-icons/io5";
 
-const Gridpaint = () => {
-  const gridSize = 25;
-  const [cells, setCells] = useState(
-    Array(gridSize * gridSize).fill(0) // Fill with 0s initially
-  );
+const Gridpaint = ({ cells, setCells, gridSize }) => {
+
   const [painting, setPainting] = useState(false);
 
   const handleMouseDown = (event, index) => {
@@ -36,7 +33,7 @@ const Gridpaint = () => {
     <div
       onContextMenu={(e) => e.preventDefault()} 
       onMouseUp={handleMouseUp}
-      className=" border relative grid min-w-[480px] min-h-[480px]  shadow-2xl shadow-slate-400 max-[1408px]:scale-75 max-[1100px]:scale-[0.6] "
+      className=" relative grid min-w-[480px] min-h-[480px]  shadow-2xl shadow-slate-400"
       style={{ gridTemplateColumns: `repeat(${gridSize}, 1fr)`, gridTemplateRows: `repeat(${gridSize}, 1fr)` }}
     >
       <button
