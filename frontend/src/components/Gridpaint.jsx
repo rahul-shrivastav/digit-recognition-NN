@@ -36,7 +36,7 @@ const Gridpaint = () => {
     <div
       onContextMenu={(e) => e.preventDefault()} 
       onMouseUp={handleMouseUp}
-      className="relative grid w-[480px] h-[480px]  shadow-2xl shadow-slate-400 "
+      className=" border relative grid min-w-[480px] min-h-[480px]  shadow-2xl shadow-slate-400 max-[1408px]:scale-75 max-[1100px]:scale-[0.6] "
       style={{ gridTemplateColumns: `repeat(${gridSize}, 1fr)`, gridTemplateRows: `repeat(${gridSize}, 1fr)` }}
     >
       <button
