@@ -22,6 +22,7 @@ function App() {
     });
     const data = await res.json();
     setprediction(data.prediction)
+    console.log(data)
   };
 
   return (

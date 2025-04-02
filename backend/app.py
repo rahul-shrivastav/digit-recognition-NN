@@ -10,6 +10,8 @@ CORS(app)
 def predict():
     model = joblib.load('model.pkl')
     data = request.get_json()
+    if not data:
+        return jsonify(error="Invalid JSON"), 400
 
     prediction = model.predict(np.array([data['dataArray']]))
     value = np.argmax(prediction)
