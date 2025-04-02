@@ -16,9 +16,9 @@ function App() {
     const res = await fetch(`${import.meta.env.VITE_BACKEND_API}/predict`, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ dataArray: ans }),
+      body: JSON.stringify({ dataArray: ans })
     });
     const data = await res.json();
     setprediction(data.prediction)
