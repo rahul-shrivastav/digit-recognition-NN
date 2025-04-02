@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { IoReloadCircle } from "react-icons/io5";
 
-const Gridpaint = ({ cells, setCells, gridSize }) => {
+const Gridpaint = ({ cells, setCells, gridSize, setprediction }) => {
 
   const [painting, setPainting] = useState(false);
 
@@ -37,7 +37,7 @@ const Gridpaint = ({ cells, setCells, gridSize }) => {
       style={{ gridTemplateColumns: `repeat(${gridSize}, 1fr)`, gridTemplateRows: `repeat(${gridSize}, 1fr)` }}
     >
       <button
-        onClick={() => setCells(Array(gridSize * gridSize).fill(0))}
+        onClick={() => { setCells(Array(gridSize * gridSize).fill(0)); setprediction(null) }}
         className="absolute bottom-0 -right-10 hover:scale-105 hover:cursor-pointer transition-transform w-7 h-7 flex items-center justify-center text-4xl text-gray-800"
       >
         <IoReloadCircle />
