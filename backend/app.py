@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-import joblib
 import numpy as np
+import tensorflow as tf
 
 app = Flask(__name__)
 CORS(app)
@@ -9,7 +9,7 @@ CORS(app)
 @app.route('/predict', methods=['POST'])
 def predict():
     try:
-        model = joblib.load('model.pkl')
+        model = tf.keras.models.load_model('model.h5')
         data = request.get_json()
         if not data:
             return jsonify(error="Invalid JSON"), 400
