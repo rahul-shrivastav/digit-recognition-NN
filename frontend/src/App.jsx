@@ -7,8 +7,10 @@ function App() {
   const [cells, setCells] = useState(
     Array(gridSize * gridSize).fill(0)
   );
+  const [predicting, setpredicting] = useState(false);
 
   const handleSubmit = async () => {
+    setpredicting(true)
     let ans = [];
     for (let index = 0; index < 784; index += 28) {
       ans.push(cells.slice(index, index + 28))
@@ -22,11 +24,13 @@ function App() {
     });
     const data = await res.json();
     setprediction(data.prediction)
+    setpredicting(false)
     console.log(data)
   };
 
   return (
-    <div className="w-screen h-screen flex items-center justify-center overflow-clip">
+    <div className="relative w-screen h-screen flex items-center justify-center overflow-clip">
+      <div className={"w-full h-full absolute top-0 left-0 flex items-center justify-center bg-gray-300 z-10 opacity-80" + predicting ? 'hidden' : ''}><span className='animate-pulse'>Connecting to Backend...</span></div>
       <div className=" relative w-[40%]  h-full flex flex-col items-center justify-center gap-10   ">
         <h1 className="text-3xl  font-semibold bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent ">
           DRAW A DIGIT
