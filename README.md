@@ -4,21 +4,22 @@
 ![Flask](https://img.shields.io/badge/Flask-2.0.1-black?style=flat&logo=flask) 
 ![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=flat&logo=react) 
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.2.0-38B2AC?style=flat&logo=tailwindcss) 
-![scikit-learn](https://img.shields.io/badge/scikit--learn-0.24.2-orange?style=flat&logo=scikitlearn)
-![pandas](https://img.shields.io/badge/pandas-1.3.3-blue?style=flat&logo=pandas)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.14-orange?style=flat&logo=tensorflow)
+![Keras](https://img.shields.io/badge/Keras-2.12-D00000?style=flat&logo=keras&logoColor=white)
+![Deep Learning](https://img.shields.io/badge/Deep%20Learning-Neural%20Nets-2ECC71?style=flat&logo=brains&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-1.21.2-013243?style=flat&logo=numpy)
-![KNN](https://img.shields.io/badge/KNN-Algorithm-green?style=flat&logo=scikitlearn)
 
-A React and Tailwind CSS-based product application that provides personalized product recommendations using machine learning. The backend is built with Flask and Python, leveraging scikit-learn's K-Nearest Neighbors (KNN) algorithm to suggest similar products based on user interactions or product attributes.
+A simple web application that recognizes handwritten digits using a deep learning model built with TensorFlow and Keras. The backend is powered by Flask, while the interactive frontend is built using React.js and styled with Tailwind CSS. The app demonstrates real-time digit prediction from user-drawn input using a trained neural network.
+
 
 [![VISIT](https://img.shields.io/badge/-VISIT-blue?style=for-the-badge)](https://recommendation-system-steel.vercel.app/)
 
 ## Tech Stack
-- ` Python ` : versatile, high-level, interpreted, easy-to-learn programming language.
-- ` Scikit-Learn `: A powerful Python library for machine learning.
-- ` React.js ` : A JavaScript library for building dynamic user interfaces with reusable components.
-- ` Flask `: A lightweight Python web framework to build APIs.
-- `Tailwind-CSS` : A utility-first CSS framework for building custom, responsive designs quickly by composing classes directly in HTML.
+- ` Python ` : Versatile, high-level, interpreted, easy-to-learn programming language.  
+- ` React.js ` : A JavaScript library for building dynamic user interfaces with reusable components.  
+- ` Flask ` : A lightweight Python web framework to build APIs.  
+- ` TensorFlow ` : An end-to-end open-source framework by Google for machine learning and deep learning applications.  
+- ` Keras ` : A user-friendly, high-level neural networks API built on top of TensorFlow for quick experimentation.
 
 ## Getting Started
 
