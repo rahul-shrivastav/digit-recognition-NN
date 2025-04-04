@@ -44,7 +44,7 @@ npm install
 
 To run this project frontend, you will need to add the following environment variables to your .env file in frontend
 ```bash
-VITE_
+VITE_BACKEND_API
 ```
 A sample .evn file is also provided in the repository.
 
