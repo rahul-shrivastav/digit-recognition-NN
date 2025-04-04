@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className="relative w-screen h-screen flex items-center justify-center overflow-clip">
-      <div className={predicting ? "w-full h-full absolute top-0 left-0 flex items-center justify-center bg-gray-300 z-10 opacity-80 " : 'hidden'}><span className='animate-pulse'>Connecting to Backend...</span></div>
+      <div className={predicting ? "w-full h-full absolute top-0 left-0 flex items-center justify-center bg-gray-300 z-10 opacity-80 " : 'hidden'}><span className='animate-pulse'>Connecting to Backend...Might take 1-2 minutes for first request</span></div>
       <div className=" relative w-[40%]  h-full flex flex-col items-center justify-center gap-10   ">
         <h1 className="text-3xl  font-semibold bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent ">
           DRAW A DIGIT
